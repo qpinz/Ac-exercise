@@ -1,0 +1,17 @@
+#change-mode {
+  margin-bottom: 10px;
+}
+
+.list-type,
+.card-type {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin: 0 2px;
+}
+
+.list-type:hover,
+.card-type:hover {
+  transform: scale(1.2);
+  color: #999999;
+}
