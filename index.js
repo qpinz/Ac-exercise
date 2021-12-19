@@ -54,7 +54,7 @@ function renderMovieListByCardType(data) {
 function renderMovieListByListType(data) {
   dataPanel.innerHTML = "";
   let rawHTML = "";
-  rawHTML += `<ul class="list-group list-group-flush"><li class="list-group-item"></li>`;
+  rawHTML += `<ul class="by-list-type"><li class="list-group-item"></li>`;
   data.forEach((item) => {
     rawHTML += `
     <li class="list-group-item d-flex justify-content-between align-items-center">${item.title}
@@ -146,6 +146,7 @@ searchForm.addEventListener("submit", function onSearchFormSubmitted(event) {
   whichPage = 1; //--每當搜尋時，分頁預設為第一頁
   MoviesListType(1);
 });
+
 // 分頁監聽事件
 paginator.addEventListener("click", function onPaginatorClicked(event) {
   if (event.target.tagName !== "A") return;
